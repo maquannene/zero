@@ -1,0 +1,60 @@
+{
+    "name": "zero",
+    "description": "zero",
+    "version": "9.9.9",
+    "scripts": {
+        "start": "DEV=1 LIVELOAD=1 webpack-dev-server --mode development --env.host 127.0.0.1 --env.port 7008",
+        "build": "webpack --mode production"
+    },
+    "lint-staged": {
+        "src/**/*.@(js|jsx)": [
+            "eslint --fix",
+            "git add"
+        ]
+    },
+    "author": {
+        "name": "笑舜",
+        "email": "junshun.mq@alibaba-inc.com"
+    },
+    "maintainers": [
+        {
+            "name": "笑舜",
+            "email": "junshun.mq@alibaba-inc.com"
+        }
+    ],
+    "tnpm": {
+        "mode": "yarn"
+    },
+    "dependencies": {
+        "babel-polyfill": "^6.8.0",
+        "connected-react-router": "^6.3.2",
+        "history": "^4.9.0",
+        "prop-types": "^15.7.2",
+        "react": "^16.8.6",
+        "react-dom": "^16.8.6",
+        "react-immutable-proptypes": "^2.1.0",
+        "react-redux": "^6.0.1",
+        "react-router-dom": "^5.0.0",
+        "redux": "^3.7.2",
+        "redux-saga": "^1.0.2"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.2.3",
+        "@babel/core": "^7.2.0",
+        "@babel/plugin-proposal-class-properties": "^7.4.0",
+        "@babel/plugin-proposal-decorators": "^7.4.0",
+        "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+        "@babel/preset-env": "^7.2.0",
+        "@babel/preset-react": "^7.0.0",
+        "@babel/register": "^7.4.0",
+        "babel-eslint": "^10.0.1",
+        "babel-loader": "^8.0.4",
+        "globby": "^9.2.0",
+        "prettier": "^1.14.2",
+        "webpack": "^4.20.2",
+        "webpack-cli": "^3.1.1",
+        "webpack-dev-server": "^3.1.9",
+        "webpack-simple-progress-plugin": "^0.0.4",
+        "webstorm-disable-index": "^1.2.0"
+    }
+}

@@ -1,0 +1,60 @@
+{
+    "extends": "eslint-config-ali/react",
+    "parser": "babel-eslint",
+    "plugins": ["react"],
+    "globals": {
+        "it": true,
+        "describe": true,
+        "require": true,
+        "process": true,
+        "before": true,
+        "after": true,
+        "beforeEach": true,
+        "afterEach": true
+    },
+    "env": {
+        "browser": true,
+        "node": true
+    },
+    "rules": {
+        "strict": "off",
+        "no-console": "off",
+        "require-yield": "off",
+        "import/no-dynamic-require": "off",
+        "react/prefer-stateless-function": "off",
+        "react/forbid-prop-types": "off",
+        "class-methods-use-this": "off",
+        "comma-dangle": "off",
+        "semi": "off",
+        "react/prop-types": "off",
+        "react/require-default-props": ["off"],
+        "max-len": "off",
+        "no-script-url": "off",
+        "quotes": "error",
+        "jsx-quotes": "error",
+        "quote-props": "error",
+        "react/no-find-dom-node": "off",
+        "react/no-string-refs": "off",
+        "no-nested-ternary": "off",
+        "implicit-arrow-linebreak": "off",
+        "space-before-function-paren": "off",
+        "generator-star-spacing": "off",
+        "no-param-reassign": "off"
+    },
+    "overrides": [
+        {
+            "files": ["*/**"],
+            "rules": {
+                "indent": [
+                    "warn",
+                    4,
+                    {
+                        "SwitchCase": 1
+                    }
+                ],
+                "react/jsx-indent": ["warn", 4],
+                "react/jsx-indent-props": ["warn", 4]
+            }
+        }
+    ]
+}
