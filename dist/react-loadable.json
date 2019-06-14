@@ -1,0 +1,626 @@
+{
+  "../../components/News": [
+    {
+      "id": "./src/components/News.jsx",
+      "name": "./src/components/News.jsx",
+      "file": "0.js",
+      "publicPath": "/0.js"
+    }
+  ],
+  "../../components/About": [
+    {
+      "id": "./src/components/About.jsx",
+      "name": "./src/components/About.jsx",
+      "file": "1.js",
+      "publicPath": "/1.js"
+    },
+    {
+      "id": "./src/components/About.jsx",
+      "name": "./src/components/About.jsx",
+      "file": "page/demo2/index.js",
+      "publicPath": "/page/demo2/index.js"
+    }
+  ],
+  "../../components/Home": [
+    {
+      "id": "./src/components/Home.jsx",
+      "name": "./src/components/Home.jsx",
+      "file": "2.js",
+      "publicPath": "/2.js"
+    },
+    {
+      "id": "./src/components/Home.jsx",
+      "name": "./src/components/Home.jsx",
+      "file": "page/demo2/index.js",
+      "publicPath": "/page/demo2/index.js"
+    }
+  ],
+  "undefined": [
+    {
+      "id": 0,
+      "name": null,
+      "file": "page/demo1/index.js",
+      "publicPath": "/page/demo1/index.js"
+    },
+    {
+      "id": "./node_modules/webpack/hot sync ^\\.\\/log$",
+      "name": "./node_modules/webpack/hot sync ^\\.\\/log$",
+      "file": "page/demo1/index.js",
+      "publicPath": "/page/demo1/index.js"
+    },
+    {
+      "id": 1,
+      "name": null,
+      "file": "page/demo2/index.js",
+      "publicPath": "/page/demo2/index.js"
+    },
+    {
+      "id": "./node_modules/webpack/hot sync ^\\.\\/log$",
+      "name": "./node_modules/webpack/hot sync ^\\.\\/log$",
+      "file": "page/demo2/index.js",
+      "publicPath": "/page/demo2/index.js"
+    }
+  ],
+  "../../components/Loading": [
+    {
+      "id": "./src/components/Loading.jsx",
+      "name": "./src/components/Loading.jsx",
+      "file": "page/demo1/index.js",
+      "publicPath": "/page/demo1/index.js"
+    },
+    {
+      "id": "./src/components/Loading.jsx",
+      "name": "./src/components/Loading.jsx",
+      "file": "page/demo2/index.js",
+      "publicPath": "/page/demo2/index.js"
+    }
+  ],
+  "../../helpers/fakeDelay": [
+    {
+      "id": "./src/helpers/fakeDelay.js",
+      "name": "./src/helpers/fakeDelay.js",
+      "file": "page/demo1/index.js",
+      "publicPath": "/page/demo1/index.js"
+    }
+  ],
+  "./App": [
+    {
+      "id": "./src/page/demo1/App.jsx",
+      "name": "./src/page/demo1/App.jsx",
+      "file": "page/demo1/index.js",
+      "publicPath": "/page/demo1/index.js"
+    },
+    {
+      "id": "./src/page/demo2/App.jsx",
+      "name": "./src/page/demo2/App.jsx",
+      "file": "page/demo2/index.js",
+      "publicPath": "/page/demo2/index.js"
+    }
+  ],
+  "./src/page/demo1/index.jsx": [
+    {
+      "id": "./src/page/demo1/index.jsx",
+      "name": "./src/page/demo1/index.jsx",
+      "file": "page/demo1/index.js",
+      "publicPath": "/page/demo1/index.js"
+    }
+  ],
+  "./routes": [
+    {
+      "id": "./src/page/demo1/routes.jsx",
+      "name": "./src/page/demo1/routes.jsx",
+      "file": "page/demo1/index.js",
+      "publicPath": "/page/demo1/index.js"
+    },
+    {
+      "id": "./src/page/demo2/routes.jsx",
+      "name": "./src/page/demo2/routes.jsx",
+      "file": "page/demo2/index.js",
+      "publicPath": "/page/demo2/index.js"
+    }
+  ],
+  "./src/page/demo2/index.jsx": [
+    {
+      "id": "./src/page/demo2/index.jsx",
+      "name": "./src/page/demo2/index.jsx",
+      "file": "page/demo2/index.js",
+      "publicPath": "/page/demo2/index.js"
+    }
+  ],
+  "@babel/runtime/helpers/esm/extends": [
+    {
+      "id": "./node_modules/@babel/runtime/helpers/esm/extends.js",
+      "name": "./node_modules/@babel/runtime/helpers/esm/extends.js",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    }
+  ],
+  "@babel/runtime/helpers/esm/inheritsLoose": [
+    {
+      "id": "./node_modules/@babel/runtime/helpers/esm/inheritsLoose.js",
+      "name": "./node_modules/@babel/runtime/helpers/esm/inheritsLoose.js",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    }
+  ],
+  "@babel/runtime/helpers/esm/objectWithoutPropertiesLoose": [
+    {
+      "id": "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js",
+      "name": "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    }
+  ],
+  "@babel/runtime/helpers/inheritsLoose": [
+    {
+      "id": "./node_modules/@babel/runtime/helpers/inheritsLoose.js",
+      "name": "./node_modules/@babel/runtime/helpers/inheritsLoose.js",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    }
+  ],
+  "ansi-html": [
+    {
+      "id": "./node_modules/ansi-html/index.js",
+      "name": "./node_modules/ansi-html/index.js",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    }
+  ],
+  "ansi-regex": [
+    {
+      "id": "./node_modules/ansi-regex/index.js",
+      "name": "./node_modules/ansi-regex/index.js",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    }
+  ],
+  "events": [
+    {
+      "id": "./node_modules/events/events.js",
+      "name": "./node_modules/events/events.js",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    }
+  ],
+  "gud": [
+    {
+      "id": "./node_modules/gud/index.js",
+      "name": "./node_modules/gud/index.js",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    }
+  ],
+  "history": [
+    {
+      "id": "./node_modules/history/esm/history.js",
+      "name": "./node_modules/history/esm/history.js",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    }
+  ],
+  "hoist-non-react-statics": [
+    {
+      "id": "./node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js",
+      "name": "./node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    }
+  ],
+  "html-entities": [
+    {
+      "id": "./node_modules/html-entities/index.js",
+      "name": "./node_modules/html-entities/index.js",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    }
+  ],
+  "./lib/html4-entities.js": [
+    {
+      "id": "./node_modules/html-entities/lib/html4-entities.js",
+      "name": "./node_modules/html-entities/lib/html4-entities.js",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    }
+  ],
+  "./lib/html5-entities.js": [
+    {
+      "id": "./node_modules/html-entities/lib/html5-entities.js",
+      "name": "./node_modules/html-entities/lib/html5-entities.js",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    }
+  ],
+  "./lib/xml-entities.js": [
+    {
+      "id": "./node_modules/html-entities/lib/xml-entities.js",
+      "name": "./node_modules/html-entities/lib/xml-entities.js",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    }
+  ],
+  "loglevel": [
+    {
+      "id": "./node_modules/loglevel/lib/loglevel.js",
+      "name": "./node_modules/loglevel/lib/loglevel.js",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    }
+  ],
+  "mini-create-react-context": [
+    {
+      "id": "./node_modules/mini-create-react-context/dist/esm/index.js",
+      "name": "./node_modules/mini-create-react-context/dist/esm/index.js",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    }
+  ],
+  "punycode": [
+    {
+      "id": "./node_modules/node-libs-browser/node_modules/punycode/punycode.js",
+      "name": "./node_modules/node-libs-browser/node_modules/punycode/punycode.js",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    }
+  ],
+  "object-assign": [
+    {
+      "id": "./node_modules/object-assign/index.js",
+      "name": "./node_modules/object-assign/index.js",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    }
+  ],
+  "prop-types/checkPropTypes": [
+    {
+      "id": "./node_modules/prop-types/checkPropTypes.js",
+      "name": "./node_modules/prop-types/checkPropTypes.js",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    }
+  ],
+  "./factoryWithTypeCheckers": [
+    {
+      "id": "./node_modules/prop-types/factoryWithTypeCheckers.js",
+      "name": "./node_modules/prop-types/factoryWithTypeCheckers.js",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    }
+  ],
+  "prop-types": [
+    {
+      "id": "./node_modules/prop-types/index.js",
+      "name": "./node_modules/prop-types/index.js",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    }
+  ],
+  "./lib/ReactPropTypesSecret": [
+    {
+      "id": "./node_modules/prop-types/lib/ReactPropTypesSecret.js",
+      "name": "./node_modules/prop-types/lib/ReactPropTypesSecret.js",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    }
+  ],
+  "./decode": [
+    {
+      "id": "./node_modules/querystring-es3/decode.js",
+      "name": "./node_modules/querystring-es3/decode.js",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    }
+  ],
+  "./encode": [
+    {
+      "id": "./node_modules/querystring-es3/encode.js",
+      "name": "./node_modules/querystring-es3/encode.js",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    }
+  ],
+  "querystring": [
+    {
+      "id": "./node_modules/querystring-es3/index.js",
+      "name": "./node_modules/querystring-es3/index.js",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    }
+  ],
+  "./cjs/react-dom.development.js": [
+    {
+      "id": "./node_modules/react-dom/cjs/react-dom.development.js",
+      "name": "./node_modules/react-dom/cjs/react-dom.development.js",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    }
+  ],
+  "react-dom": [
+    {
+      "id": "./node_modules/react-dom/index.js",
+      "name": "./node_modules/react-dom/index.js",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    }
+  ],
+  "./cjs/react-is.development.js": [
+    {
+      "id": "./node_modules/react-is/cjs/react-is.development.js",
+      "name": "./node_modules/react-is/cjs/react-is.development.js",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    }
+  ],
+  "react-is": [
+    {
+      "id": "./node_modules/react-is/index.js",
+      "name": "./node_modules/react-is/index.js",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    }
+  ],
+  "react-loadable": [
+    {
+      "id": "./node_modules/react-loadable/lib/index.js",
+      "name": "./node_modules/react-loadable/lib/index.js",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    }
+  ],
+  "react-router-dom": [
+    {
+      "id": "./node_modules/react-router-dom/esm/react-router-dom.js",
+      "name": "./node_modules/react-router-dom/esm/react-router-dom.js",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    }
+  ],
+  "react-router": [
+    {
+      "id": "./node_modules/react-router/esm/react-router.js",
+      "name": "./node_modules/react-router/esm/react-router.js",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    }
+  ],
+  "isarray": [
+    {
+      "id": "./node_modules/react-router/node_modules/isarray/index.js",
+      "name": "./node_modules/react-router/node_modules/isarray/index.js",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    }
+  ],
+  "path-to-regexp": [
+    {
+      "id": "./node_modules/react-router/node_modules/path-to-regexp/index.js",
+      "name": "./node_modules/react-router/node_modules/path-to-regexp/index.js",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    }
+  ],
+  "./cjs/react.development.js": [
+    {
+      "id": "./node_modules/react/cjs/react.development.js",
+      "name": "./node_modules/react/cjs/react.development.js",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    }
+  ],
+  "react": [
+    {
+      "id": "./node_modules/react/index.js",
+      "name": "./node_modules/react/index.js",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    }
+  ],
+  "resolve-pathname": [
+    {
+      "id": "./node_modules/resolve-pathname/index.js",
+      "name": "./node_modules/resolve-pathname/index.js",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    }
+  ],
+  "./cjs/scheduler-tracing.development.js": [
+    {
+      "id": "./node_modules/scheduler/cjs/scheduler-tracing.development.js",
+      "name": "./node_modules/scheduler/cjs/scheduler-tracing.development.js",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    }
+  ],
+  "./cjs/scheduler.development.js": [
+    {
+      "id": "./node_modules/scheduler/cjs/scheduler.development.js",
+      "name": "./node_modules/scheduler/cjs/scheduler.development.js",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    }
+  ],
+  "scheduler": [
+    {
+      "id": "./node_modules/scheduler/index.js",
+      "name": "./node_modules/scheduler/index.js",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    }
+  ],
+  "scheduler/tracing": [
+    {
+      "id": "./node_modules/scheduler/tracing.js",
+      "name": "./node_modules/scheduler/tracing.js",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    }
+  ],
+  "sockjs-client/dist/sockjs": [
+    {
+      "id": "./node_modules/sockjs-client/dist/sockjs.js",
+      "name": "./node_modules/sockjs-client/dist/sockjs.js",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    }
+  ],
+  "strip-ansi": [
+    {
+      "id": "./node_modules/strip-ansi/index.js",
+      "name": "./node_modules/strip-ansi/index.js",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    }
+  ],
+  "tiny-invariant": [
+    {
+      "id": "./node_modules/tiny-invariant/dist/tiny-invariant.esm.js",
+      "name": "./node_modules/tiny-invariant/dist/tiny-invariant.esm.js",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    }
+  ],
+  "tiny-warning": [
+    {
+      "id": "./node_modules/tiny-warning/dist/tiny-warning.esm.js",
+      "name": "./node_modules/tiny-warning/dist/tiny-warning.esm.js",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    }
+  ],
+  "url": [
+    {
+      "id": "./node_modules/url/url.js",
+      "name": "./node_modules/url/url.js",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    }
+  ],
+  "./util": [
+    {
+      "id": "./node_modules/url/util.js",
+      "name": "./node_modules/url/util.js",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    }
+  ],
+  "value-equal": [
+    {
+      "id": "./node_modules/value-equal/index.js",
+      "name": "./node_modules/value-equal/index.js",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    }
+  ],
+  "./BaseClient": [
+    {
+      "id": "./node_modules/webpack-dev-server/client/clients/BaseClient.js",
+      "name": "./node_modules/webpack-dev-server/client/clients/BaseClient.js",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    }
+  ],
+  "/Users/maquannene/workbench/middle-ground/zero/node_modules/webpack-dev-server/client/clients/SockJSClient.js": [
+    {
+      "id": "./node_modules/webpack-dev-server/client/clients/SockJSClient.js",
+      "name": "./node_modules/webpack-dev-server/client/clients/SockJSClient.js",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    }
+  ],
+  "/Users/maquannene/workbench/middle-ground/zero/node_modules/webpack-dev-server/client/index.js?http://localhost": [
+    {
+      "id": "./node_modules/webpack-dev-server/client/index.js?http://localhost",
+      "name": "./node_modules/webpack-dev-server/client/index.js?http://localhost",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    }
+  ],
+  "./overlay": [
+    {
+      "id": "./node_modules/webpack-dev-server/client/overlay.js",
+      "name": "./node_modules/webpack-dev-server/client/overlay.js",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    }
+  ],
+  "./socket": [
+    {
+      "id": "./node_modules/webpack-dev-server/client/socket.js",
+      "name": "./node_modules/webpack-dev-server/client/socket.js",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    }
+  ],
+  "./utils/createSocketUrl": [
+    {
+      "id": "./node_modules/webpack-dev-server/client/utils/createSocketUrl.js",
+      "name": "./node_modules/webpack-dev-server/client/utils/createSocketUrl.js",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    }
+  ],
+  "./getCurrentScriptSource": [
+    {
+      "id": "./node_modules/webpack-dev-server/client/utils/getCurrentScriptSource.js",
+      "name": "./node_modules/webpack-dev-server/client/utils/getCurrentScriptSource.js",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    }
+  ],
+  "./utils/log": [
+    {
+      "id": "./node_modules/webpack-dev-server/client/utils/log.js",
+      "name": "./node_modules/webpack-dev-server/client/utils/log.js",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    }
+  ],
+  "./utils/reloadApp": [
+    {
+      "id": "./node_modules/webpack-dev-server/client/utils/reloadApp.js",
+      "name": "./node_modules/webpack-dev-server/client/utils/reloadApp.js",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    }
+  ],
+  "./utils/sendMessage": [
+    {
+      "id": "./node_modules/webpack-dev-server/client/utils/sendMessage.js",
+      "name": "./node_modules/webpack-dev-server/client/utils/sendMessage.js",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    }
+  ],
+  "./../../webpack/buildin/global.js": [
+    {
+      "id": "./node_modules/webpack/buildin/global.js",
+      "name": "./node_modules/webpack/buildin/global.js",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    }
+  ],
+  "./../../../webpack/buildin/module.js": [
+    {
+      "id": "./node_modules/webpack/buildin/module.js",
+      "name": "./node_modules/webpack/buildin/module.js",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    }
+  ],
+  "webpack/hot/emitter": [
+    {
+      "id": "./node_modules/webpack/hot/emitter.js",
+      "name": "./node_modules/webpack/hot/emitter.js",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    }
+  ],
+  "./log": [
+    {
+      "id": "./node_modules/webpack/hot/log.js",
+      "name": "./node_modules/webpack/hot/log.js",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    }
+  ]
+}

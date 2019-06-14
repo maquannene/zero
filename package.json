@@ -4,7 +4,7 @@
     "version": "9.9.9",
     "scripts": {
         "start": "DEV=1 LIVELOAD=1 webpack-dev-server --mode development --env.host 127.0.0.1 --env.port 7008",
-        "build": "webpack --mode production"
+        "build": "rm -rf dist && webpack --mode production"
     },
     "lint-staged": {
         "src/**/*.@(js|jsx)": [
@@ -26,13 +26,17 @@
         "mode": "yarn"
     },
     "dependencies": {
+        "@alife/next": "^1.14.2",
+        "moment": "^2.24.0",
         "babel-polyfill": "^6.8.0",
         "connected-react-router": "^6.3.2",
         "history": "^4.9.0",
+        "html-webpack-plugin": "^3.2.0",
         "prop-types": "^15.7.2",
         "react": "^16.8.6",
         "react-dom": "^16.8.6",
         "react-immutable-proptypes": "^2.1.0",
+        "react-loadable": "^5.5.0",
         "react-redux": "^6.0.1",
         "react-router-dom": "^5.0.0",
         "redux": "^3.7.2",
@@ -52,6 +56,7 @@
         "globby": "^9.2.0",
         "prettier": "^1.14.2",
         "webpack": "^4.20.2",
+        "webpack-bundle-analyzer": "^3.3.2",
         "webpack-cli": "^3.1.1",
         "webpack-dev-server": "^3.1.9",
         "webpack-simple-progress-plugin": "^0.0.4",
