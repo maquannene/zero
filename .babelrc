@@ -1,17 +1,25 @@
 {
-    "presets": [
-        "@babel/preset-env",
-        "@babel/preset-react"
-    ],
+    "presets": ["@babel/preset-env", "@babel/preset-react"],
     "plugins": [
-        ["@babel/plugin-syntax-dynamic-import", {
-            "legacy": true
-        }],
-        ["@babel/plugin-proposal-decorators", {
-            "legacy": true
-        }],
-        ["@babel/plugin-proposal-class-properties", {
-            "loose": true
-        }]
+        ["babel-plugin-smart-webpack-import"],
+
+        [
+            "@babel/plugin-syntax-dynamic-import",
+            {
+                "legacy": true
+            }
+        ],
+        [
+            "@babel/plugin-proposal-decorators",
+            {
+                "legacy": true
+            }
+        ],
+        [
+            "@babel/plugin-proposal-class-properties",
+            {
+                "loose": true
+            }
+        ]
     ]
 }

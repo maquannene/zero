@@ -7,6 +7,10 @@ import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer'
 
 // const files = globby.sync(['**/pages/**'], { cwd: `${process.cwd()}/src` })
 
+const { DEV } = process.env
+
+const publicPath = '//test.alicdn.com/'
+
 export default env => {
     const config = {}
     //  需要打包的文件列表
@@ -16,15 +20,17 @@ export default env => {
     //         [file]: `./src/${file}`
     //     }
     // }, {})
+
+    config.mode = DEV ? 'development' : 'production'
+
     config.entry = {
         'page/demo1/index': './src/page/demo1/index.jsx',
         'page/demo2/index': './src/page/demo2/index.jsx'
     }
-    console.log(__dirname)
     //  输出列表
     config.output = {
         path: path.resolve(__dirname, 'dist'),
-        publicPath: '/dist',
+        publicPath,
         filename: '[name].js',
         chunkFilename: '[name].js'
     }
@@ -58,9 +64,10 @@ export default env => {
         }),
         new ReactLoadablePlugin({
             filename: './dist/react-loadable.json'
-        })
+        }),
         //  webpack 打包分析插件
-        // new BundleAnalyzerPlugin()
+        // new BundleAnalyzerPlugin(),
+        new webpack.DefinePlugin({})
     ]
 
     //  优化设置
@@ -82,12 +89,11 @@ export default env => {
             name: true,
             cacheGroups: {
                 vendor: {
+                    //  使用 all 模式，会最大化优化公用代码，无论 动态引用、直接引用，都会打进 vendor 文件中；
+                    chunks: 'all',
                     //  打包资源变动较少的资源
                     test: /[\\/]node_modules[\\/]/,
-                    priority: -10,
-                    name: 'vendor',
-                    //  使用 all 模式，会最大化优化公用代码，无论 动态引用、直接引用，都会打进 vendor 文件中；
-                    chunks: 'all'
+                    name: 'vendor'
                 },
                 default: false // 默认不使用default缓存分组
             }
@@ -97,6 +103,24 @@ export default env => {
         }
     }
 
-    // config.devtool = 'source-map'
+    config.devServer = {
+        publicPath,
+        disableHostCheck: true,
+        headers: {
+            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Credentials': 'true'
+        },
+        host: '127.0.0.1',
+        port: '8080',
+        stats: {
+            colors: true,
+            chunks: false,
+            children: false,
+            modules: false,
+            chunkModules: false
+        }
+    }
+
+    config.devtool = 'source-map'
     return config
 }

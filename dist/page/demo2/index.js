@@ -1,20 +1,6 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([[4,5,6],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([[6,3,4],{
 
-/***/ 11:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return fakeDelay; });
-function fakeDelay(ms) {
-  return new Promise(resolve => {
-    setTimeout(resolve, ms);
-  });
-}
-
-
-/***/ }),
-
-/***/ 19:
+/***/ 18:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -69,7 +55,7 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ 20:
+/***/ 19:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -124,7 +110,7 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ 32:
+/***/ 31:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -135,7 +121,7 @@ var react = __webpack_require__(0);
 var react_default = /*#__PURE__*/__webpack_require__.n(react);
 
 // EXTERNAL MODULE: ./node_modules/react-dom/index.js
-var react_dom = __webpack_require__(12);
+var react_dom = __webpack_require__(11);
 
 // EXTERNAL MODULE: ./node_modules/react-router-dom/esm/react-router-dom.js
 var react_router_dom = __webpack_require__(3);
@@ -150,14 +136,11 @@ var lib_default = /*#__PURE__*/__webpack_require__.n(lib);
 // EXTERNAL MODULE: ./src/components/Loading.jsx
 var Loading = __webpack_require__(7);
 
-// EXTERNAL MODULE: ./src/helpers/fakeDelay.js
-var fakeDelay = __webpack_require__(11);
-
 // EXTERNAL MODULE: ./src/components/Home.jsx
-var Home = __webpack_require__(19);
+var Home = __webpack_require__(18);
 
 // EXTERNAL MODULE: ./src/components/About.jsx
-var About = __webpack_require__(20);
+var About = __webpack_require__(19);
 
 // CONCATENATED MODULE: ./src/page/demo2/routes.jsx
 
@@ -165,24 +148,14 @@ var About = __webpack_require__(20);
 
 
 
- // import news from '../../components/News'
-// export const Home = Loadable({
-//     loader: () => import('../../components/Home'),
-//     loading: Loading
-// })
-// export const About = Loadable({
-//     loader: () => fakeDelay(2000).then(() => import('../../components/About')),
-//     loading: Loading
-// })
-
-var News = lib_default()({
+var DynamicNews = lib_default()({
   loader: function loader() {
-    return __webpack_require__.e(/* import() */ 2).then(__webpack_require__.bind(null, 33));
+    return __webpack_require__.e(/* import() | News-Q0O5R */ 0).then(__webpack_require__.bind(null, 32));
   },
   loading: Loading["a" /* default */]
 });
 var routes_Home = Home["default"];
-var routes_About = About["default"]; // export const News = news
+var routes_About = About["default"];
 // CONCATENATED MODULE: ./src/page/demo2/App.jsx
 
 
@@ -199,7 +172,7 @@ function App() {
     to: '/about'
   }, "about"), react_default.a.createElement(react_router_dom["b" /* Link */], {
     to: '/news'
-  }, "news")), react_default.a.createElement(react_router["c" /* Switch */], null, react_default.a.createElement(react_router["a" /* Route */], {
+  }, " \u52A8\u6001\u52A0\u8F7D news")), react_default.a.createElement(react_router["c" /* Switch */], null, react_default.a.createElement(react_router["a" /* Route */], {
     exact: true,
     path: "/",
     component: routes_Home
@@ -210,7 +183,7 @@ function App() {
   }), react_default.a.createElement(react_router["a" /* Route */], {
     exact: true,
     path: "/news",
-    component: News
+    component: DynamicNews
   })));
 }
 // CONCATENATED MODULE: ./src/page/demo2/index.jsx
@@ -246,4 +219,5 @@ function Loading(props) {
 
 /***/ })
 
-},[[32,0,1]]]);
+},[[31,1,2]]]);
+//# sourceMappingURL=index.js.map

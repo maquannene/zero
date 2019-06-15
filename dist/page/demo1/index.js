@@ -1,20 +1,6 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([[3],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([[5],{
 
-/***/ 11:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return fakeDelay; });
-function fakeDelay(ms) {
-  return new Promise(resolve => {
-    setTimeout(resolve, ms);
-  });
-}
-
-
-/***/ }),
-
-/***/ 31:
+/***/ 30:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -25,7 +11,7 @@ var react = __webpack_require__(0);
 var react_default = /*#__PURE__*/__webpack_require__.n(react);
 
 // EXTERNAL MODULE: ./node_modules/react-dom/index.js
-var react_dom = __webpack_require__(12);
+var react_dom = __webpack_require__(11);
 
 // EXTERNAL MODULE: ./node_modules/react-router-dom/esm/react-router-dom.js
 var react_router_dom = __webpack_require__(3);
@@ -40,8 +26,12 @@ var lib_default = /*#__PURE__*/__webpack_require__.n(lib);
 // EXTERNAL MODULE: ./src/components/Loading.jsx
 var Loading = __webpack_require__(7);
 
-// EXTERNAL MODULE: ./src/helpers/fakeDelay.js
-var fakeDelay = __webpack_require__(11);
+// CONCATENATED MODULE: ./src/helpers/fakeDelay.js
+function fakeDelay(ms) {
+  return new Promise(resolve => {
+    setTimeout(resolve, ms);
+  });
+}
 
 // CONCATENATED MODULE: ./src/page/demo1/routes.jsx
 
@@ -50,21 +40,21 @@ var fakeDelay = __webpack_require__(11);
 
 var Home = lib_default()({
   loader: function loader() {
-    return __webpack_require__.e(/* import() */ 6).then(__webpack_require__.bind(null, 19));
+    return __webpack_require__.e(/* import() | Home-nLn6f */ 4).then(__webpack_require__.bind(null, 18));
   },
   loading: Loading["a" /* default */]
 });
 var About = lib_default()({
   loader: function loader() {
-    return Object(fakeDelay["a" /* default */])(2000).then(function () {
-      return __webpack_require__.e(/* import() */ 5).then(__webpack_require__.bind(null, 20));
+    return fakeDelay(2000).then(function () {
+      return __webpack_require__.e(/* import() | About-S8dKy */ 3).then(__webpack_require__.bind(null, 19));
     });
   },
   loading: Loading["a" /* default */]
 });
 var News = lib_default()({
   loader: function loader() {
-    return __webpack_require__.e(/* import() */ 2).then(__webpack_require__.bind(null, 33));
+    return __webpack_require__.e(/* import() | News-oCNbR */ 0).then(__webpack_require__.bind(null, 32));
   },
   loading: Loading["a" /* default */]
 });
@@ -131,4 +121,5 @@ function Loading(props) {
 
 /***/ })
 
-},[[31,0,1]]]);
+},[[30,1,2]]]);
+//# sourceMappingURL=index.js.map
