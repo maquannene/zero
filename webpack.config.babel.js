@@ -5,7 +5,8 @@ import htmlWebpackPlugin from 'html-webpack-plugin'
 import { ReactLoadablePlugin } from 'react-loadable/webpack'
 import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer'
 
-// const files = globby.sync(['**/pages/**'], { cwd: `${process.cwd()}/src` })
+const cwd = `${process.cwd()}/src`
+const files = globby.sync(['pages/*'], { cwd, onlyFiles: false })
 
 const { DEV } = process.env
 
@@ -14,19 +15,16 @@ const publicPath = '//test.alicdn.com/'
 export default env => {
     const config = {}
     //  需要打包的文件列表
-    // config.entry = files.reduce((result, file) => {
-    //     return {
-    //         ...result,
-    //         [file]: `./src/${file}`
-    //     }
-    // }, {})
-
     config.mode = DEV ? 'development' : 'production'
 
-    config.entry = {
-        'page/demo1/index': './src/page/demo1/index.jsx',
-        'page/demo2/index': './src/page/demo2/index.jsx'
-    }
+    //  入口文件
+    config.entry = files.reduce((result, file) => {
+        return {
+            ...result,
+            [`${file}/index`]: `./src/${file}/index.jsx`
+        }
+    }, {})
+
     //  输出列表
     config.output = {
         path: path.resolve(__dirname, 'dist'),
@@ -34,11 +32,13 @@ export default env => {
         filename: '[name].js',
         chunkFilename: '[name].js'
     }
+
     //  解析配置
     config.resolve = {
         //  自动解析确定的扩展，能够使用户在引入模块时不带扩展
         extensions: ['.js', '.jsx']
     }
+
     //
     config.module = {
         rules: [
@@ -50,23 +50,23 @@ export default env => {
         ]
     }
 
+    const htmlWebpackPlugins = files.map(file => {
+        return new htmlWebpackPlugin({
+            chunks: [`${file}/index`, 'vendor', 'runtime'],
+            template: 'src/demo/index.html',
+            filename: `${file}/index.html`
+        })
+    })
+
     //  插件
     config.plugins = [
-        new htmlWebpackPlugin({
-            chunks: ['page/demo1/index', 'vendor', 'runtime'],
-            template: 'src/demo/index.html',
-            filename: 'page/demo1/index.html'
-        }),
-        new htmlWebpackPlugin({
-            chunks: ['page/demo2/index', 'vendor', 'runtime'],
-            template: 'src/demo/index.html',
-            filename: 'page/demo2/index.html'
-        }),
+        ...htmlWebpackPlugins,
         new ReactLoadablePlugin({
             filename: './dist/react-loadable.json'
         }),
         //  webpack 打包分析插件
         // new BundleAnalyzerPlugin(),
+        //  环境变量定义
         new webpack.DefinePlugin({})
     ]
 
