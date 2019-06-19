@@ -77,7 +77,7 @@ export default env => {
             //  哪些代码需要优化，有三个可选值：initial(初始块)、async(按需加载块)、all(全部块)，默认为async
             //  选择使用 async，使用按需动态加载，会自动将动态引用单独打包，提高公用性；
             chunks: 'async',
-            minSize: 30,
+            minSize: 30000,
             // 被引用次数，默认为1
             minChunks: 1,
             // 按需加载时候最大的并行请求数，默认为5
