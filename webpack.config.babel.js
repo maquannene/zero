@@ -36,7 +36,11 @@ export default env => {
     //  解析配置
     config.resolve = {
         //  自动解析确定的扩展，能够使用户在引入模块时不带扩展
-        extensions: ['.js', '.jsx']
+        extensions: ['.js', '.jsx'],
+        alias: {
+            utils: path.join(__dirname, 'src/utils'),
+            pages: path.join(__dirname, 'src/pages')
+        }
     }
 
     //
@@ -46,6 +50,74 @@ export default env => {
                 test: /\.jsx$/,
                 loader: 'babel-loader',
                 exclude: /node_modules/
+            },
+            {
+                test: /\.css$/i,
+                use: [
+                    {
+                        loader: 'style-loader'
+                    },
+                    {
+                        loader: 'css-loader'
+                    }
+                ],
+                /**
+                 * 排除掉 module css 部分
+                 */
+                exclude: /\.module\.css$/i
+            },
+            {
+                test: /\.module\.css$/i,
+                use: [
+                    {
+                        loader: 'style-loader'
+                    },
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            modules: {
+                                localIdentName: '[local]--[hash:base64:5]'
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                test: /\.scss$/i,
+                use: [
+                    {
+                        loader: 'style-loader'
+                    },
+                    {
+                        loader: 'css-loader'
+                    },
+                    {
+                        loader: 'sass-loader'
+                    }
+                ],
+                /**
+                 * 排除掉 module css 部分
+                 */
+                exclude: /\.module\.scss$/i
+            },
+            {
+                test: /\.module\.scss$/i,
+                use: [
+                    {
+                        loader: 'style-loader'
+                    },
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            modules: {
+                                localIdentName: '[local]--[hash:base64:5]'
+                            }
+                        }
+                    },
+                    {
+                        loader: 'sass-loader'
+                    }
+                ]
             }
         ]
     }
