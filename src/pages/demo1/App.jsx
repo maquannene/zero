@@ -1,6 +1,7 @@
 import { Route, Switch, Link } from 'react-router-dom'
 import * as routes from './routes'
 import React from 'react'
+import './index.css'
 
 export default function App() {
     return (
