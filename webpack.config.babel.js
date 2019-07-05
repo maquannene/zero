@@ -3,11 +3,12 @@ import path from 'path'
 import globby from 'globby'
 import htmlWebpackPlugin from 'html-webpack-plugin'
 import { ReactLoadablePlugin } from 'react-loadable/webpack'
+import { CheckerPlugin } from 'awesome-typescript-loader'
 import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer'
 
 const cwd = `${process.cwd()}/src`
 const files = globby.sync(['pages/*'], { cwd, onlyFiles: false })
-
+const fileIndexs = globby.sync(['pages/*/index.(js|ts|jsx|tsx)'], { cwd, onlyFiles: false })
 const { DEV } = process.env
 
 const publicPath = '//test.alicdn.com/'
@@ -18,10 +19,10 @@ export default env => {
     config.mode = DEV ? 'development' : 'production'
 
     //  入口文件
-    config.entry = files.reduce((result, file) => {
+    config.entry = files.reduce((result, file, index) => {
         return {
             ...result,
-            [`${file}/index`]: `./src/${file}/index.jsx`
+            [`${file}/index`]: `./src/${fileIndexs[index]}`
         }
     }, {})
 
@@ -36,7 +37,7 @@ export default env => {
     //  解析配置
     config.resolve = {
         //  自动解析确定的扩展，能够使用户在引入模块时不带扩展
-        extensions: ['.js', '.jsx'],
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
         alias: {
             utils: path.join(__dirname, 'src/utils'),
             pages: path.join(__dirname, 'src/pages')
@@ -47,10 +48,19 @@ export default env => {
     config.module = {
         rules: [
             {
+                test: /\.ts(x?)$/,
+                loader: 'awesome-typescript-loader',
+                exclude: /node_modules/,
+                options: {
+                    useCache: true
+                }
+            },
+            {
                 test: /\.jsx$/,
                 loader: 'babel-loader',
                 exclude: /node_modules/
             },
+
             {
                 test: /\.css$/i,
                 use: [
@@ -139,7 +149,8 @@ export default env => {
         //  webpack 打包分析插件
         // new BundleAnalyzerPlugin(),
         //  环境变量定义
-        new webpack.DefinePlugin({})
+        new webpack.DefinePlugin({}),
+        new CheckerPlugin()
     ]
 
     //  优化设置

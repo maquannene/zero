@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from 'react'
 import Loadable from 'react-loadable'
 import Loading from '../../components/Loading'
 import home from '../../components/Home'

@@ -36,6 +36,7 @@
         "redux-saga": "^1.0.2"
     },
     "devDependencies": {
+        "awesome-typescript-loader": "^5.2.1",
         "@babel/cli": "^7.2.3",
         "@babel/core": "^7.2.0",
         "@babel/plugin-proposal-class-properties": "^7.4.0",
@@ -44,6 +45,8 @@
         "@babel/preset-env": "^7.2.0",
         "@babel/preset-react": "^7.0.0",
         "@babel/register": "^7.4.0",
+        "@types/react": "^16.0.25",
+        "typescript": "^3.5.2",
         "babel-eslint": "^10.0.1",
         "babel-loader": "^8.0.4",
         "babel-plugin-smart-webpack-import": "^1.4.5",
@@ -54,6 +57,7 @@
         "prettier": "^1.14.2",
         "sass-loader": "^7.1.0",
         "style-loader": "^0.23.1",
+        "source-map-loader": "^0.2.4",
         "webpack": "^4.20.2",
         "webpack-bundle-analyzer": "^3.3.2",
         "webpack-cli": "^3.1.1",

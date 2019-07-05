@@ -1,7 +1,7 @@
-import React from 'react'
+import * as React from 'react'
 import Control from './control'
 
-export default class About extends React.Component {
+export default class About extends React.Component<{}, { value: number }> {
     constructor(props) {
         super(props)
         this.state = {

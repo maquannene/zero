@@ -1,7 +1,10 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import * as React from 'react'
+import * as PropTypes from 'prop-types'
 
-export default class Control extends React.Component {
+export default class Control extends React.Component<
+    { onChange?: Function; onClick?: Function },
+    { defaultValue: number; _value: number }
+> {
     static propTypes = {
         value: PropTypes.number,
         onChange: PropTypes.func,
