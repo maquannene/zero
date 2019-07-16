@@ -9,15 +9,12 @@ import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer'
 const cwd = `${process.cwd()}/src`
 const files = globby.sync(['pages/*'], { cwd, onlyFiles: false })
 const fileIndexs = globby.sync(['pages/*/index.(js|ts|jsx|tsx)'], { cwd, onlyFiles: false })
-const { DEV } = process.env
 
 const publicPath = '//test.alicdn.com/'
 
-export default env => {
+const webpackConfig = env => {
     const config = {}
-    //  需要打包的文件列表
-    config.mode = DEV ? 'development' : 'production'
-
+    config.mode = env.DEV ? 'development' : 'production'
     //  入口文件
     config.entry = files.reduce((result, file, index) => {
         return {
@@ -40,7 +37,8 @@ export default env => {
         extensions: ['.js', '.jsx', '.ts', '.tsx'],
         alias: {
             utils: path.join(__dirname, 'src/utils'),
-            pages: path.join(__dirname, 'src/pages')
+            pages: path.join(__dirname, 'src/pages'),
+            components: path.join(__dirname, 'src/components')
         }
     }
 
@@ -207,3 +205,5 @@ export default env => {
     config.devtool = 'source-map'
     return config
 }
+
+export default webpackConfig

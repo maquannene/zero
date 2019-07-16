@@ -1,7 +1,7 @@
 {
-    "extends": "eslint-config-ali/react",
-    "parser": "babel-eslint",
-    "plugins": ["react"],
+    "extends": ["eslint-config-ali/react"],
+    "parser": "@typescript-eslint/parser",
+    "plugins": ["react", "@typescript-eslint"],
     "globals": {
         "it": true,
         "describe": true,
@@ -17,6 +17,17 @@
         "node": true
     },
     "rules": {
+        "indent": [
+            "warn",
+            4,
+            {
+                "SwitchCase": 1
+            }
+        ],
+        "@typescript-eslint/interface-name-prefix": ["error", "always"],
+        "interface-name": [true, "always-prefix"],
+        "lines-between-class-members": "off",
+        "no-unused-vars": "off",
         "strict": "off",
         "no-console": "off",
         "require-yield": "off",
@@ -43,7 +54,7 @@
     },
     "overrides": [
         {
-            "files": ["*/**"],
+            "files": ["src/*/**"],
             "rules": {
                 "indent": [
                     "warn",

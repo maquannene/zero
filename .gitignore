@@ -8,3 +8,4 @@ mods/.sass-cache/
 .happypack
 dist/
 .awcache
+yarn.lock
